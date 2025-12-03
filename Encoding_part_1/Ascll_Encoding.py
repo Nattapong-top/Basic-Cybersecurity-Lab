@@ -7,11 +7,3 @@ def ascll_code(a:str):
 word_str = ascll_code(a)
 print(''.join(word_str))
 # NCSA Thailand
-
-b = 'NCSA Thailand'
-
-def hax_encode(b:str):
-    code = [chr(n) for n in b]
-    return code
-word_to_hex = hax_encode(b)
-print(word_to_hex)
