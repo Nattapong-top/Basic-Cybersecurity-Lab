@@ -10,11 +10,11 @@ word = 'SEC Playground'
 enstring = word.encode('utf-8').hex()
 print('Hex:', enstring)
 
-destring = str(codecs.decode(enstring, 'hex'))[2:-1]
+destring = codecs.decode(enstring, 'hex').decode('utf-8')
 print('String: ', destring)
 
 code_hex = '54 68 65 20 66 6c 61 67 20 69 73 20 63 72 79 70 74 6f 7b 68 33 78 5f 33 6e 63 30 64 31 6e 67 7d'
 
 now_hex = ''.join(code_hex.split())
-decode = str(codecs.decode(now_hex, 'hex'))
+decode = codecs.decode(now_hex, 'hex').decode('utf-8')
 print(f'Decode: ', decode)
