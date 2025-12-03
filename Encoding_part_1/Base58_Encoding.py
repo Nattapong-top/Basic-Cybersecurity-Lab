@@ -5,6 +5,8 @@
 (เช่น l, I, 0 และ O) เพื่อให้อ่านง่ายขึ้น โดยปกติ Base58 
 มักถูกใช้ใน cryptocurrencies ต่างๆ เช่น Bitcoin, Ripple เป็นต้น'''
 
+# pip install base58
+
 import base58
 
 def base58ToString(b:str):
